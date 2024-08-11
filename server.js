@@ -1,10 +1,12 @@
-const express = require('express');
-const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const KakaoStrategy = require('passport-kakao').Strategy;
-const NaverStrategy = require('passport-naver').Strategy;
-const cors = require('cors');
-require('dotenv').config();
+import express from 'express';
+import passport from 'passport';
+import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
+import { Strategy as KakaoStrategy } from 'passport-kakao';
+import { Strategy as NaverStrategy } from 'passport-naver';
+import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 
